@@ -51,6 +51,7 @@ public class UseCyclicBarrier {
                 barrier.await();
             	Thread.sleep(1000+id);
                 System.out.println("Thread_"+id+" ....do its business ");
+                //第一次等待结束后，汇总处理完之后，还可以继续等待再处理，下一轮汇总处理
                 barrier.await();
             } catch (Exception e) {
                 e.printStackTrace();
