@@ -43,7 +43,7 @@ public class UseAtomicStampedReference {
         rightStampThread.start();
         rightStampThread.join();
         errorStampThread.join();
-        AbstractQueuedSynchronizer
+//        AbstractQueuedSynchronizer
         System.out.println(asr.getReference()+"============"+asr.getStamp());
     }
 }
